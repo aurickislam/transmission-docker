@@ -21,9 +21,8 @@ services:
       - 51413:51413/udp
     volumes:
       - config:/config
-#      - /media/usb2:/downloads
-      - /media/usb1/torrent:/downloads/complete
-      - /media/usb2:/downloads/incomplete
+      - /mnt/usb1/torrent:/downloads/complete
+      - /mnt/usb2:/downloads/incomplete
 #      - path to watch folder:/watch
 
 volumes:
